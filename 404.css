@@ -1,0 +1,110 @@
+
+/* =========================
+RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #0b0f19, #05070f);
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+HEADER
+========================= */
+header {
+  padding: 20px 10%;
+}
+
+.logo img {
+  height: 70px;
+}
+
+/* =========================
+CENTER ERROR SECTION
+========================= */
+.error {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLASS CARD */
+.glass-card {
+  text-align: center;
+  padding: 50px;
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  max-width: 500px;
+}
+
+/* BIG 404 */
+.glitch {
+  font-size: 120px;
+  font-weight: bold;
+  color: #00d4ff;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* TEXT */
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+p {
+  color: #aaa;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #00d4ff, #0077ff);
+  color: #000;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,212,255,0.3);
+}
+
+/* =========================
+MOBILE
+========================= */
+@media (max-width: 600px) {
+  .glitch {
+    font-size: 80px;
+  }
+
+  .glass-card {
+    margin: 20px;
+    padding: 30px;
+  }
+}
